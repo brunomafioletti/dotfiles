@@ -11,8 +11,5 @@
   trustExitCode = true
 [difftool "kitty"]
   cmd = kitty +kitten diff $LOCAL $REMOTE
-[user]
-	name = Bruno Mafioletti
-	email = brunomafioletti@pm.me
 [include]
 	path = /home/brunomafioletti/.gitconfig.local
