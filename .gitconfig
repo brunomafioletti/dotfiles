@@ -1,0 +1,18 @@
+[color]
+  ui = auto
+[commit]
+  gpgsign = true
+[core]
+  excludesfile = ~/.gitignore
+[diff]
+  tool = kitty
+[difftool]
+  prompt = false
+  trustExitCode = true
+[difftool "kitty"]
+  cmd = kitty +kitten diff $LOCAL $REMOTE
+[user]
+	name = Bruno Mafioletti
+	email = brunomafioletti@pm.me
+[include]
+	path = /home/brunomafioletti/.gitconfig.local
