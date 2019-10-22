@@ -12,4 +12,4 @@
 [difftool "kitty"]
   cmd = kitty +kitten diff $LOCAL $REMOTE
 [include]
-	path = /home/brunomafioletti/.gitconfig.local
+  path = ~/.gitconfig.local
