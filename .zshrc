@@ -1,4 +1,4 @@
-source $HOME/.ZPlug/init.zsh
+source $HOME/.zplug/init.zsh
 
 zplug romkatv/powerlevel10k, as:theme, depth:1
 
@@ -13,12 +13,11 @@ fi
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
 
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
-
+export GPG_TTY=$(tty)
 # Kitty Configs
-# kitty + complete setup zsh | source /dev/stdin
-# alias icat="kitty +kitten icat"
-# alias kdiff="kitty +kitten diff"
+kitty + complete setup zsh | source /dev/stdin
+alias icat="kitty +kitten icat"
+alias kdiff="kitty +kitten diff"
 # alias ls="ls --color=auto"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
