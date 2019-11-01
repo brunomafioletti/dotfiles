@@ -3,7 +3,7 @@
 [commit]
   gpgsign = true
 [core]
-  excludesfile = $HOME/.gitignore
+  excludesfile = ~/.gitignore
 [diff]
   tool = kitty
 [difftool]
@@ -12,4 +12,4 @@
 [difftool "kitty"]
   cmd = kitty +kitten diff $LOCAL $REMOTE
 [include]
-  path = $HOME/.gitconfig.local
+  path = ~/.gitconfig.local
