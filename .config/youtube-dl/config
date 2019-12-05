@@ -2,7 +2,7 @@
 # skip unavailable videos in a playlist
 --ignore-errors
 # Where to save files
--o ~/Videos/youtube/%(release_date)s_%(title)s.%(ext)s
+-o ~/Videos/youtube/%(title)s.%(ext)s
 # Format
 -f best
 # Verbose mode
