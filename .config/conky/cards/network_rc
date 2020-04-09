@@ -1,0 +1,50 @@
+background no
+font Noto sans:size=10
+#xftfont sans:size=10
+use_xft yes
+xftalpha 0.9
+update_interval 1
+imlib_cache_size 0
+total_run_times 0
+own_window yes
+own_window_type dock
+#own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual true
+own_window_argb_value 180
+own_window_colour 000000
+double_buffer yes
+minimum_size 225 100
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color 101010
+default_shade_color 101010
+alignment top_right
+gap_x 320#320
+gap_y 353#383
+no_buffers yes
+cpu_avg_samples 1
+uppercase no
+border_inner_margin 15
+if_up_strictness link
+
+#colors
+color1 16A085
+color2 aaa
+color3 ddd
+
+TEXT
+${color1}${font Oswald:size=10:bold}NETWORK ${color2} ${hr 2}
+${if_up enp11s0}
+${color3}${font Noto Sans:size=9}Down: ${downspeed enp11s0}/s ${alignr}Up: ${upspeed enp11s0} /s
+${color1}${color1}${downspeedgraph enp11s0 20,90 444444 eeeeee} ${alignr}${color1}${upspeedgraph enp11s0 20,90 444444 eeeeee}
+${color3}  Total: ${totaldown enp11s0} ${alignr}Total: ${totalup enp11s0}
+${color3}  IP: ${addr enp11s0}
+${else}${if_up wlp0s20f0u7}
+${color3}${font Noto Sans:size=9}Down: ${downspeed wlp0s20f0u7}/s ${alignr}Up: ${upspeed wlp0s20f0u7}/s
+${color1}${color1}${downspeedgraph wlp0s20f0u7 20,90 444444 eeeeee} ${alignr}${color1}${upspeedgraph wlp0s20f0u7 20,90 444444 eeeeee}
+${color3}  Total: ${totaldown wlp0s20f0u7} ${alignr}Total: ${totalup wlp0s20f0u7}
+${color3}  IP: ${addr wlp0s20f0u7}
+${endif}

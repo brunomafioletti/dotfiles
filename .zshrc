@@ -11,7 +11,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load
 
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 

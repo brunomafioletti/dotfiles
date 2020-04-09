@@ -1,0 +1,44 @@
+background no
+font Noto sans:size=10
+#xftfont sans:size=10
+use_xft yes
+xftalpha 0.9
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_type dock
+#own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual true
+own_window_argb_value 180
+own_window_colour 000000
+double_buffer yes
+minimum_size 505 120
+#maximum_size 220
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color 101010
+default_shade_color 101010
+alignment top_right
+gap_x 40#320
+gap_y 785#530
+no_buffers yes
+cpu_avg_samples 1
+uppercase no
+border_inner_margin 15
+default_bar_size 144 6
+
+#colors
+color1 16A085
+color2 aaa
+color3 ddd
+
+TEXT
+${color1}${font Oswald:size=10:bold}MEDIA PLAYER ${color2} ${hr 2}
+${color3}${font Noto Sans:size=10}Artist: ${alignr}${mpd_artist}
+Title: ${alignr}${mpd_title}
+Album: ${alignr}${mpd_album}
+Status: ${alignr}${mpd_status}
+Progress:${alignr}${mpd_elapsed}/${mpd_length} ${color1}${mpd_bar 5, 140}
