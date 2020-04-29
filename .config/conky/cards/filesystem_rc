@@ -40,6 +40,6 @@ ${font Oswald:bold:size=10}${color1}FILESYSTEM ${color2} ${hr 2}
 
 ${color3}${font Noto Sans:size=10}Home: ${alignc}${color3}${font Noto Sans:size=10} ${fs_free /home} / ${fs_size /home} ${alignr}${fs_used_perc /home}%  ${color1}${fs_bar 6, 140 /home}
 
-${color3}${font Noto Sans:size=10}WD Black: ${alignc}${color3}${font Noto Sans:size=10} ${fs_free /run/media/brunomafioletti/WD Black} / ${fs_size /run/media/brunomafioletti/WD Black}${alignr}${fs_used_perc /run/media/brunomafioletti/WD Black}%  ${color1}${fs_bar 6, 140 /run/media/brunomafioletti/WD Black}
+${color3}${font Noto Sans:size=10}WD Black: ${alignc}${color3}${font Noto Sans:size=10} ${fs_free /mnt/edee5ebc-da21-4f00-a87d-ca6980719fd7} / ${fs_size /mnt/edee5ebc-da21-4f00-a87d-ca6980719fd7}${alignr}${fs_used_perc /mnt/edee5ebc-da21-4f00-a87d-ca6980719fd7}%  ${color1}${fs_bar 6, 140 /mnt/edee5ebc-da21-4f00-a87d-ca6980719fd7}
 
-${color3}${font Noto Sans:size=10}WD Blue: ${alignc}${color3}${font Noto Sans:size=10} ${fs_free /run/media/brunomafioletti/WD Blue} / ${fs_size /run/media/brunomafioletti/WD Blue}${alignr}${fs_used_perc /run/media/brunomafioletti/WD Blue}%  ${color1}${fs_bar 6, 140 /run/media/brunomafioletti/WD Blue}
+${color3}${font Noto Sans:size=10}WD Blue: ${alignc}${color3}${font Noto Sans:size=10} ${fs_free /mnt/5e034b1b-bda9-4529-a302-e23ff0ab8435} / ${fs_size /mnt/5e034b1b-bda9-4529-a302-e23ff0ab8435}${alignr}${fs_used_perc /mnt/5e034b1b-bda9-4529-a302-e23ff0ab8435}%  ${color1}${fs_bar 6, 140 /mnt/5e034b1b-bda9-4529-a302-e23ff0ab8435}
